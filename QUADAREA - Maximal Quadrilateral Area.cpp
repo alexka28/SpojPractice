@@ -15,20 +15,15 @@ double area(double a,double b,double c,double d)
 }
 int main()
 {
-
     int t,i=0;
     double a,b,c,d;
     cin>>t;
+
     while(i != t)
     {
         cin >>a>>b>>c>>d;
-
-        printf("%.2lf ", area(a,b,c,d));
-
-
+        cout <<setprecision(2)<<fixed<< area(a,b,c,d)<<endl;
         ++i;
     }
-
-
     return 0;
 }

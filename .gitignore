@@ -24,3 +24,4 @@ hs_err_pid*
 *.o
 #Exe file
 *.exe
+/bin/
