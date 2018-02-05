@@ -7,15 +7,20 @@ int main()
     do
     {
         cin>>a>>b>>c;
-        if(b-a == c-b)
+        if(a == 0 && b == 0 && c == 0){
+            break;
+        }
+        int d = b-a;
+        if(b+d == c)
         {
-            cout<<"AP "<< c+(c-b)<<"\n";
+            cout<<"AP "<< c+d<<"\n";
         }
         else
         {
-            cout << "GP " << c*(c/b)<<"\n";
+            d=b/a;
+            cout << "GP " << c*d<<"\n";
         }
     }
-    while (a != 0 && b != 0 && c != 0);
+    while (1);
     return 0;
 }
